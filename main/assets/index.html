@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="jquery-1.10.2.js"></script>
+<script src="main.js"></script>
+<style>
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: green;
+    color: #ffffff;
+}
+.page {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+div {
+    width: 360px;
+    height: 360px;
+    position: fixed;
+    background-image: url("logo.png");
+    z-index: -1;
+    opacity:0;
+    -webkit-animation-name: logo; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: logo;
+    animation-duration: 12s;
+}
+
+.buttonup {
+    background-color: green;
+    position: fixed;
+    border: none;
+    color: white;
+    margin-left: -10px;
+    margin-top: 0;
+    height:300px;
+    width: 110%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.buttonbot {
+    background-color: red;
+    position: fixed;
+    border: none;
+    color: white;
+    margin-left: -10px;
+    margin-top: 300px;
+    height:50%;
+    width: 110%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1 {
+color: #f8f8f8;
+font-size: 80px;
+position: fixed;
+z-index: 2;
+-webkit-tap-highlight-color: transparent;
+}
+
+h2 {
+color: #ebebeb;
+font-size: 40px;
+position: fixed;
+z-index: 5;
+top: 290px;
+-webkit-tap-highlight-color: transparent;
+}
+
+
+
+</style>
+</head>
+<body>
+<div id="mainLogo"></div>
+
+
+
+
+<button class="buttonup" id="id1" 
+onclick="upmove()"><h1 id="header1" onclick="upmove()">Lesson</h1></button>
+
+<button class="buttonbot" id="id2" 
+onclick="botmove()"><h2 id="header2" onclick="botmove()">Options</h2></button>
+
+<script>
+function upmove() {
+	location.href='READY LESSON.html';
+}
+function botmove() {
+	location.href='OPTIONS.html';
+}
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

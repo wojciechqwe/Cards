@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Wearable Web Basic Template" />
+
+    <title>Tizen Wearable Web Basic Application</title>
+<style>
+@font-face {
+    font-family: Bahiana;
+    src: url(Bahiana-Regular.otf);
+}
+@font-face {
+    font-family: Comic;
+    src: url(comic_zine_ot.otf);
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #222222;
+    color: #666666;
+    font-family: Bahiana;  
+}
+#main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    -webkit-tap-highlight-color: transparent;
+}
+#demo {
+text-align: center;
+margin-top: 180px;
+position: relative;
+top: 50%;
+transform: translateY(-50%); 
+font-size:50px;     
+}
+
+#result {
+margin-top: 50px;
+width:360px;
+align: center;
+font-size:30px;   
+position: fixed;
+}
+
+
+#result1 {
+margin-top: 248px;
+width:360px;
+align: center;
+font-size:30px;   
+position: fixed;
+}
+
+#info {
+margin-top: -30px;
+font-size:24px;
+}
+
+#buttonGood {
+    position: fixed;
+    width: 50%;
+    background-color: green;
+    bottom: 0px;
+    height: 30%;
+    text-align: center;
+    left: 50%;
+}
+
+#buttonGood p{
+    margin-top: 30%;
+
+}
+
+#buttonBad  {
+    position: fixed;
+    width: 50%;
+    background-color: red;
+    bottom: 0px;
+    height: 30%;
+    text-align: center;
+}
+
+#buttonBad p{
+    margin-top: 30%;
+
+}
+</style>
+<script src="main.js"></script>
+<body>
+
+<div id="main" class="page">
+<div  align="center" id="result"></div>
+<div  align="center" id="result1"></div>
+<p id="demo">Options</p>
+<div  align="center" id="info">Spin right to see words<br>Spin left to see options</div>
+
+</div>
+
+
+<div id="buttonBad">
+    <p>Left</p>
+</div>
+<div id="buttonGood">
+    <p>Right</p>
+</div>
+
+
+</body>
+</html>
